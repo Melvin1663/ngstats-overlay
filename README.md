@@ -1,10 +1,10 @@
 # NetherGames Stats Overlay
-Stat checks everyone in your game/match in NetherGames.
+Stat checks everyone in your game/match in NetherGames.  
 This application was made with electron.
 ## Compatibility
-**Windows 10 or 11** with Minecraft installed
-We support **all minecraft versions** NetherGames supports.
-We support **all minecraft architectures** (x64, x86 & arm)
+**Windows 10 or 11** with Minecraft installed  
+We support **all minecraft versions** NetherGames supports.  
+We support **all minecraft architectures** (x64, x86 & arm)  
 ## Setup
 ### Build yourself
 Install packages
@@ -22,6 +22,6 @@ This application utilizes the module [`bedrock-protocol`](https://www.npmjs.com/
 This application is far from perfect so you may encounter some bugs here and there...
 If you are having problems while using the app, feel free to join our [discord server](https://discord.gg/6t3cYEJN2X) and report the problem there.
 ## Contributors
-**Kappug** - Founder
-**Melvin** - Cofounder
-**AdminRAT** - Threat/Smurf function
+**Kappug** - Founder  
+**Melvin** - Cofounder  
+**AdminRAT** - Threat/Smurf function  
