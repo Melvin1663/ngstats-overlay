@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="index.css" />
+  <script defer src="./render.js"></script>
+</head>
+
+<body>
+  <div id="title_bar">
+    <p id="win_title">NetherGames</p>
+    <span id="win_title_2">Stats Overlay</span>
+    <p id="win_ver">v1.0.0</p>
+    <button class="app_buttons" id="app_exit" onclick="exit_window()">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M16.9498 8.46447C17.3404 8.07394 17.3404 7.44078 16.9498 7.05025C16.5593 6.65973 15.9261 6.65973 15.5356 7.05025L12.0001 10.5858L8.46455 7.05025C8.07402 6.65973 7.44086 6.65973 7.05033 7.05025C6.65981 7.44078 6.65981 8.07394 7.05033 8.46447L10.5859 12L7.05033 15.5355C6.65981 15.9261 6.65981 16.5592 7.05033 16.9497C7.44086 17.3403 8.07402 17.3403 8.46455 16.9497L12.0001 13.4142L15.5356 16.9497C15.9261 17.3403 16.5593 17.3403 16.9498 16.9497C17.3404 16.5592 17.3404 15.9261 16.9498 15.5355L13.4143 12L16.9498 8.46447Z">
+          </path>
+        </g>
+      </svg></button>
+    <button class="app_buttons" id="app_min" onclick="window.electronAPI.minimize(0)">
+      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="-270.99 -270.99 1001.29 1001.29" xml:space="preserve">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+          <g>
+            <path
+              d="M459.313,229.648c0,22.201-17.992,40.199-40.205,40.199H40.181c-11.094,0-21.14-4.498-28.416-11.774 C4.495,250.808,0,240.76,0,229.66c-0.006-22.204,17.992-40.199,40.202-40.193h378.936 C441.333,189.472,459.308,207.456,459.313,229.648z">
+            </path>
+          </g>
+        </g>
+      </svg></button>
+    <button class="app_buttons" id="app_opts" onclick="opt()">
+      <svg viewBox="-210 -210 1020.00 1020.00" version="1.1" id="svg9724" sodipodi:docname="settings2.svg"
+        inkscape:version="1.2.2 (1:1.2.2+202212051550+b0a8486541)"
+        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg"
+        xmlns:svg="http://www.w3.org/2000/svg">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+          <defs id="defs9728"></defs>
+          <sodipodi:namedview id="namedview9726" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0"
+            inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0"
+            inkscape:deskcolor="#d1d1d1" showgrid="true" inkscape:zoom="0.59480855" inkscape:cx="44.55215"
+            inkscape:cy="332.03961" inkscape:window-width="1920" inkscape:window-height="1009" inkscape:window-x="0"
+            inkscape:window-y="1080" inkscape:window-maximized="1" inkscape:current-layer="svg9724" showguides="true">
+            <inkscape:grid type="xygrid" id="grid9972" originx="0" originy="0"></inkscape:grid>
+            <sodipodi:guide position="40,400" orientation="0,-1" id="guide292" inkscape:locked="false"></sodipodi:guide>
+            <sodipodi:guide position="90,200" orientation="0,-1" id="guide294" inkscape:locked="false"></sodipodi:guide>
+            <sodipodi:guide position="230,500" orientation="0,-1" id="guide296" inkscape:locked="false">
+            </sodipodi:guide>
+            <sodipodi:guide position="210,300" orientation="0,-1" id="guide298" inkscape:locked="false">
+            </sodipodi:guide>
+            <sodipodi:guide position="230,100" orientation="0,-1" id="guide300" inkscape:locked="false">
+            </sodipodi:guide>
+          </sodipodi:namedview>
+          <g id="g10449" transform="matrix(0.95173205,0,0,0.95115787,13.901174,12.168794)" style="stroke-width:1.05103">
+            <path id="path356" style="stroke-linecap:round;stroke:none"
+              d="M 447.70881 -12.781343 A 42.041451 42.041451 0 0 0 405.66786 29.260344 L 405.66786 50.301721 L 27.434765 50.301721 A 42.041302 42.041302 0 0 0 -14.606185 92.341354 A 42.041302 42.041302 0 0 0 27.434765 134.38304 L 405.66786 134.38304 L 405.66786 155.44906 A 42.041451 42.041451 0 0 0 447.70881 197.49075 A 42.041451 42.041451 0 0 0 489.74976 155.44906 L 489.74976 134.38304 L 573.78036 134.38304 A 42.041302 42.041302 0 0 0 615.82336 92.341354 A 42.041302 42.041302 0 0 0 573.78036 50.301721 L 489.74976 50.301721 L 489.74976 29.260344 A 42.041451 42.041451 0 0 0 447.70881 -12.781343 z M 143.0012 197.48869 A 42.041451 42.041451 0 0 0 100.9582 239.53038 L 100.9582 260.5697 L 27.447078 260.5697 A 42.041302 42.041302 0 0 0 -14.593872 302.61139 A 42.041302 42.041302 0 0 0 27.447078 344.65308 L 100.9582 344.65308 L 100.9582 365.7191 A 42.041451 42.041451 0 0 0 143.0012 407.76078 A 42.041451 42.041451 0 0 0 185.04215 365.7191 L 185.04215 344.65308 L 573.79472 344.65308 A 42.041302 42.041302 0 0 0 615.83567 302.61139 A 42.041302 42.041302 0 0 0 573.79472 260.5697 L 185.04215 260.5697 L 185.04215 239.53038 A 42.041451 42.041451 0 0 0 143.0012 197.48869 z M 279.59427 407.76078 A 42.041451 42.041451 0 0 0 237.55332 449.80042 L 237.55332 470.83974 L 27.447078 470.83974 A 42.041302 42.041302 0 0 0 -14.593872 512.88143 A 42.041302 42.041302 0 0 0 27.447078 554.92106 L 237.55332 554.92106 L 237.55332 575.98913 A 42.041451 42.041451 0 0 0 279.59427 618.02877 A 42.041451 42.041451 0 0 0 321.63522 575.98913 L 321.63522 554.92106 L 573.79472 554.92106 A 42.041302 42.041302 0 0 0 615.83567 512.88143 A 42.041302 42.041302 0 0 0 573.79472 470.83974 L 321.63522 470.83974 L 321.63522 449.80042 A 42.041451 42.041451 0 0 0 279.59427 407.76078 z ">
+            </path>
+          </g>
+        </g>
+      </svg>
+    </button>
+    <button class="app_buttons" id="app_faq" onclick="faq()">
+      <svg viewBox="-3.6 -3.6 31.20 31.20" xmlns="http://www.w3.org/2000/svg" stroke="#000000"
+        stroke-width="0.00024000000000000003">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+          <g data-name="Layer 2">
+            <g data-name="menu-arrow-circle">
+              <rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"></rect>
+              <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path>
+              <path
+                d="M12 6a3.5 3.5 0 0 0-3.5 3.5 1 1 0 0 0 2 0A1.5 1.5 0 1 1 12 11a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-1.16A3.49 3.49 0 0 0 12 6z">
+              </path>
+              <circle cx="12" cy="17" r="1"></circle>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </button>
+    <button class="app_buttons" id="app_contributors" onclick="contributors()">
+      <svg viewBox="-4.8 -4.8 33.60 33.60" xmlns="http://www.w3.org/2000/svg">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+          <path
+            d="M12 18.5C12.5523 18.5 13 18.0523 13 17.5L13 10.5C13 9.94772 12.5523 9.5 12 9.5C11.4477 9.5 11 9.94772 11 10.5L11 17.5C11 18.0523 11.4477 18.5 12 18.5Z">
+          </path>
+          </path>
+          <path
+            d="M12 8.5C12.8284 8.5 13.5 7.82843 13.5 7C13.5 6.17157 12.8284 5.5 12 5.5C11.1716 5.5 10.5 6.17157 10.5 7C10.5 7.82843 11.1716 8.5 12 8.5Z">
+          </path>
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12ZM12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z">
+          </path>
+        </g>
+      </svg>
+    </button>
+    <button class="app_buttons" id="relay_stop" onclick="term_relay()">Terminate</button>
+    <button class="app_buttons" id="relay_start" onclick="start_relay()">Start</button>
+  </div>
+  <div id="misc">
+    <p id="madeBy">Made with ❤ by Melvin#5155</p>
+    <p id="conStats">Idle</p>
+  </div>
+  <div id="mainBody">
+    <p id="log_msg"></p>
+    <p id="log_msg_2"></p>
+    <div id="stats">
+      <table id="stats_table_h" cellspacing="0">
+        <tr>
+          <th>PLAYER</th>
+          <th>WINS</th>
+          <th>KILLS</th>
+          <th>K/D</th>
+          <th>W/L</th>
+          <th>THREAT</th>
+        </tr>
+      </table>
+      <div id="stats_main">
+        <!-- <table id="stats_table" cellspacing="0"></table> -->
+        <table id="stats_table" cellspacing="0"></table>
+      </div>
+    </div>
+  </div>
+  <div id="optionPane" style="left: 100%;">
+    <p class="option_header" id="option_region">Region</p>
+    <p class="option_header" id="option_port">Proxy Port</p>
+    <select name="region" id="_option_region">
+      <option value="play">Automatic</option>
+      <option value="na">America</option>
+      <option value="eu">Europe</option>
+      <option value="ap">Asia</option>
+    </select>
+    <input id="_option_port" type="number" value="" placeholder="19131">
+    <p class="option_header" id="option_apiKey">NetherGames API Key</p>
+    <input id="_option_apiKey" type="password" value="" placeholder="(Optional)">
+    <p class="option_header" id="option_opacity">Overlay opacity: </p>
+    <span class="option_header" id="option_opaciy_value">100%</span>
+    <div id="option_opacity_slider">
+      <input id="_option_opacity" type="range" min="0" max="100" value="100">
+      <div id="_option_opacity_helper"></div>
+      <div id="_option_opacity_helper_2"></div>
+    </div>
+    <label class="checkbox_label" id="label_ontop">
+      <input type="checkbox" id="_option_ontop" name="win_ontop" value="win_ontop">
+      Always on top
+    </label>
+    <!-- <label class="checkbox_label" id="label_autostart">
+      <input type="checkbox" id="_option_autostart" name="relay_autostart" value="relay_autostart">
+      Auto start proxy
+    </label> -->
+    <label class="checkbox_label" id="label_ignoreMouse">
+      <input type="checkbox" id="_option_ignoremouse" name="win_clickthrough" value="win_clickthrough">
+      Click throughable
+    </label>
+    <label class="checkbox_label" id="label_automin">
+      <input type="checkbox" id="_option_automin" name="win_automin" value="win_automin">
+      Minimize on game start
+    </label>
+    <button id="option_blacklists" onclick="open_blacklist()">
+      Blacklists
+      <svg id="option_blacklists_svg" width="20" height="20" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
+        stroke-width="6.4" stroke="white" fill="none">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+          <path
+            d="M55.4,32V53.58a1.81,1.81,0,0,1-1.82,1.82H10.42A1.81,1.81,0,0,1,8.6,53.58V10.42A1.81,1.81,0,0,1,10.42,8.6H32">
+          </path>
+          <polyline points="40.32 8.6 55.4 8.6 55.4 24.18"></polyline>
+          <line x1="19.32" y1="45.72" x2="54.61" y2="8.91"></line>
+        </g>
+      </svg>
+    </button>
+    <button class="options_button" id="opts_save" onclick="opts_save()">Save</button>
+    <button class="options_button" id="opts_cancel" onclick="opts_cancel()">Cancel</button>
+  </div>
+  <div id="faqPane" style="left: 100%;">
+    <h2 class="faq_head">How to use this?</h2>
+    <p class="faq_desc">Simply press the <code>Start</code> button and join the server that it displays once it's done
+      connecting.</p>
+    <h2 class="faq_head">What is an NG API Key?</h2>
+    <p class="faq_desc">An NG API Key is a special password. It is there to prevent abuse and overload of NetherGames services. Without this, you may get rate limited. Get yours <u onclick="openPortalAPI()" style="cursor: pointer;">here</u>!</p>
+    <h2 class="faq_head">Problems?</h2>
+    <p class="faq_desc">Join our <a target="_blank"
+        href="https://discord.gg/6t3cYEJN2X">discord server</a> and ask for help.</p>
+  </div>
+  <div id="contributorsPane" style="left: 100%;">
+    <h2 class="faq_head">About</h2>
+    <p class="faq_desc">This app is used to fetch the stats of players that are in your match/game in NetherGames (Stats
+      overlay).</p>
+    <h2 class="faq_head">Contributors</h2>
+    <p class="faq_desc">👑 Kappug - Founder</p>
+    <p class="faq_desc">👩‍💻 Melvin - Cofounder</p>
+    <p class="faq_desc">🐀 AdminRAT - Smurf function</p>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+{
+    "formats": {
+        "0": "Black",
+        "1": "Dark Blue",
+        "2": "Dark Green",
+        "3": "Dark Aqua",
+        "4": "Dark Red",
+        "5": "Dark Purple",
+        "6": "Gold",
+        "7": "Gray",
+        "8": "Dark Gray",
+        "9": "Blue",
+        "a": "Green",
+        "b": "Aqua",
+        "c": "Red",
+        "d": "Light Purple",
+        "e": "Yellow",
+        "f": "White",
+        "g": "Minecoin Gold"
+    },
+    "colorHex": {
+        "Black": "#000000",
+        "Dark Blue": "#0000AA",
+        "Dark Green": "#00AA00",
+        "Dark Aqua": "#00AAAA",
+        "Dark Red": "#AA0000",
+        "Dark Purple": "#AA00AA",
+        "Gold": "#FFAA00",
+        "Gray": "#AAAAAA",
+        "Dark Gray": "#555555",
+        "Blue": "#5555FF",
+        "Green": "#55FF55",
+        "Aqua": "#55FFFF",
+        "Red": "#FF5555",
+        "Light Purple": "#FF55FF",
+        "Yellow": "#FFFF55",
+        "White": "#FFFFFF",
+        "Minecoin Gold": "#DDD605"
+    }
+}
