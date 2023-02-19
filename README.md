@@ -13,7 +13,9 @@ We support **all minecraft architectures** (x64, x86 & arm)
 
 This application requires you to have [Node.js](https://nodejs.org/en/) installed. You also need to run the following command **with PowerShell** in order to exempt loopbacks for Minecraft.
 
-`CheckNetIsolation LoopbackExempt -a -n="Microsoft.MinecraftUWP_8wekyb3d8bbwe"`
+```
+CheckNetIsolation LoopbackExempt -a -n="Microsoft.MinecraftUWP_8wekyb3d8bbwe"
+```
 
 ## Setup
 
