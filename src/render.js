@@ -165,6 +165,12 @@ window.electronAPI.onData(async (event, data) => {
                 logMsg.innerHTML = 'Detected on lobby<br>Join a game for the overlay to start';
                 inLobby = true;
                 o_playerList = [];
+            } else if (['NetherGames Factions', 'NetherGames Creative', 'NetherGames Skyblock'].includes(boss)) {
+                statsDiv.style.setProperty('display', 'none');
+                logMsg.style.setProperty('display', 'block');
+                logMsg.innerHTML = 'Overlay does not work on<br>Factions, Creative, and Skyblock';
+                inLobby = true;
+                o_playerList = [];
             } else {
                 inLobby = false;
                 statsDiv.style.setProperty('display', 'flex');
@@ -248,7 +254,7 @@ window.electronAPI.onData(async (event, data) => {
 
                         let _ignSections = ignSections.split(' ');
 
-                        _ignSections.shift();
+                        if (_ignSections[0].startsWith('§l§')) _ignSections.shift();
 
                         ignSections = _ignSections.join(' ').split('§');
 
