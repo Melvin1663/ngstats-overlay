@@ -2,6 +2,7 @@ const { Relay } = require("bedrock-protocol");
 const fs = require('fs');
 const optsPath = process.argv[2];
 const version = process.argv[3];
+const authPath = process.argv[4];
 
 let options = JSON.parse(fs.readFileSync(optsPath).toString());
 
@@ -30,7 +31,7 @@ const relay = new Relay({
     version: version,
     host: options.relayIp,
     port: options.relayPort,
-    profilesFolder: "./src/minecraft",
+    profilesFolder: authPath,
     motd: {
         motd: 'NG Stats Overlay',
         levelName: 'NG Stats Overlay'

@@ -9,6 +9,7 @@ const simplyVer = require('./resources/assets/scripts/versionSimplify');
 const fetchPlayer = require('./resources/assets/scripts/fetchPlayer');
 const userDataPath = app.getPath('userData');
 const optsPath = path.join(userDataPath, 'options.json');
+const authPath = path.join(userDataPath, 'minecraft');
 const blackListPath = path.join(userDataPath, 'blacklist.txt');
 const versionKeys = require('./resources/assets/jsondb/versionKeys.json');
 const compareArray = require('./resources/assets/scripts/compareArray');
@@ -172,7 +173,7 @@ ipcMain.on('relay', (event, msg) => {
     console.info('Checking port...');
     console.info(killPort(options.relayPort).trim());
 
-    child = spawn(`node ./resources/assets/scripts/relay.js "${optsPath}" "${versionKeys[simplyVer(ver)]}"`, [__dirname], { shell: true });
+    child = spawn(`node ./resources/assets/scripts/relay.js "${optsPath}" "${versionKeys[simplyVer(ver)]}" "${authPath}"`, { cwd: __dirname, shell: true });
 
     console.info('Child process spawned');
 
