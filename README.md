@@ -30,7 +30,13 @@ To update to the latest version, uninstall your current version and install the 
 ## FAQ
 
 **Q:** App shows "Proxy server closed unexpectedly."  
-**A:** Check the logs which can be found at `%appdata%/NetherGames Stats Overlay/logs`.   If your error is [common](#common-errors), you can try and fix it, if not, ask for help in the [discord](https://discord.gg/6t3cYEJN2X).
+**A:** Check the logs which can be found at `%appdata%/NetherGames Stats Overlay/logs`.   If your error is [common](#common-errors), you can try and fix it, if not, ask for help in the [discord](https://discord.gg/6t3cYEJN2X).  
+  
+**Q:** Does this work for mobile?  
+**A:** No, and we do not have any plans on having support for mobile.  
+  
+**Q:** What is threat/smurf?
+**A:** It is a percent value which tells you how likely the player is an alternate account by an experienced player.
 
 ## Common Errors
 
