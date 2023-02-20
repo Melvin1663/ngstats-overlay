@@ -17,9 +17,29 @@ This application requires you to have [Node.js](https://nodejs.org/en/) installe
 CheckNetIsolation LoopbackExempt -a -n="Microsoft.MinecraftUWP_8wekyb3d8bbwe"
 ```
 
+## How to install
+
+1. Download the setup file from the **latest release** found on this github page.
+2. After downloading the setup file, run it. If your antivirus flags the file as malicious/harmful, allow it/ignore the threat. 
+3. Upon running the setup file, a small animation will appear on your screen. Wait for it to disappear.
+4. When it disappears, The NetherGames Stats Overlay window should appear on your screen. You just installed it!
+
+## How to update
+To update to the latest version, uninstall your current version and install the latest one.
+
+## FAQ
+
+**Q:** When clicking start = "Proxy server closed unexpectedly."  
+**A:** Check the logs which can be found at `%appdata%/NetherGames Stats Overlay/logs`.   If your error is [common](#common-errors), you can try and fix it, if not, ask for help in the [discord](https://discord.gg/6t3cYEJN2X).
+
+## Common Errors
+
+**Command "node" is not recognized**  
+You haven't installed nodejs. Download it from [here](https://nodejs.org)
+
 ## Setup
 
-### Build yourself
+**If you want to compile the project yourself**
 
 Install packages
 
@@ -35,7 +55,8 @@ npm run make
 
 ## How it works
 
-This application utilizes the module [`bedrock-protocol`](https://www.npmjs.com/package/bedrock-protocol) for creating a proxy server where the application is able to observe packets that are sent from the NetherGames server. This is required in order to get the player list from the game. (No need to inject a DLL)
+This application utilizes the module [`bedrock-protocol`](https://www.npmjs.com/package/bedrock-protocol) for creating a proxy server where the application is able to observe packets that are sent from the NetherGames server. This is required in order to get the player list from the game. (No need to inject a DLL)  
+
 ![screenshot](https://i.imgur.com/fK6vWKb.png "Preview")
 
 ## Having Problems
