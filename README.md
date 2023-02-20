@@ -19,6 +19,7 @@ CheckNetIsolation LoopbackExempt -a -n="Microsoft.MinecraftUWP_8wekyb3d8bbwe"
 
 ## How to install
 
+**Video Tutorial: [Here](https://dl.dropboxusercontent.com/s/hbc8wzqvgispr1n/ngstats-overlay%20tutorial.mp4)**
 1. Download the setup file from the **latest release** found on this github page.
 2. After downloading the setup file, run it. If your antivirus flags the file as malicious/harmful, allow it/ignore the threat. 
 3. Upon running the setup file, a small animation will appear on your screen. Wait for it to disappear.
