@@ -11,7 +11,7 @@ We support **all minecraft architectures** (x64, x86 & arm)
 
 ## Requirements
 
-This application requires you to have [Node.js](https://nodejs.org/en/) installed. You also need to run the following command **with PowerShell** in order to exempt loopbacks for Minecraft.
+This application requires you to have [Node.js](https://nodejs.org/en/) (LTS) installed. You also need to run the following command **with PowerShell** in order to exempt loopbacks for Minecraft.
 
 ```
 CheckNetIsolation LoopbackExempt -a -n="Microsoft.MinecraftUWP_8wekyb3d8bbwe"
@@ -29,13 +29,13 @@ To update to the latest version, uninstall your current version and install the 
 
 ## FAQ
 
-**Q:** When clicking start = "Proxy server closed unexpectedly."  
+**Q:** App shows "Proxy server closed unexpectedly."  
 **A:** Check the logs which can be found at `%appdata%/NetherGames Stats Overlay/logs`.   If your error is [common](#common-errors), you can try and fix it, if not, ask for help in the [discord](https://discord.gg/6t3cYEJN2X).
 
 ## Common Errors
 
 **E:** Command "node" is not recognized  
-**F:** You haven't installed nodejs. Download it from [here](https://nodejs.org)
+**F:** You haven't installed Node.js. Download it from [here](https://nodejs.org)
 
 ## Setup
 
