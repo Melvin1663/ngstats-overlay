@@ -34,8 +34,8 @@ To update to the latest version, uninstall your current version and install the 
 
 ## Common Errors
 
-**Command "node" is not recognized**  
-You haven't installed nodejs. Download it from [here](https://nodejs.org)
+**E:** Command "node" is not recognized  
+**F:** You haven't installed nodejs. Download it from [here](https://nodejs.org)
 
 ## Setup
 
