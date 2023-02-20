@@ -35,7 +35,7 @@ To update to the latest version, uninstall your current version and install the 
 **Q:** Does this work for mobile?  
 **A:** No, and we do not have any plans on having support for mobile.  
   
-**Q:** What is threat/smurf?
+**Q:** What is threat/smurf?  
 **A:** It is a percent value which tells you how likely the player is an alternate account by an experienced player.
 
 ## Common Errors
