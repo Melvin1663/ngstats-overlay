@@ -16,6 +16,7 @@ const compareArray = require('./resources/assets/scripts/compareArray');
 const parseTxt = require('./resources/assets/scripts/parseTxt');
 const mcColors = require('./resources/assets/jsondb/mcColors.json');
 const smufFunc = require('./resources/assets/scripts/smurf');
+const pjson = require('../package.json');
 const dialogKeys = {};
 const defaultOptionsJSON = {
   region: "auto",
@@ -134,7 +135,7 @@ ipcMain.on('minimize', (event, code) => mainWindow.minimize());
 ipcMain.on('exit', (event, code) => app.quit());
 
 const sendLogs = (...txt) => {
-  mainWindow.webContents.send('onLog', txt.join(' '));
+  mainWindow.webContents.send('onLog', ...txt);
 }
 
 ipcMain.on('relay', (event, msg) => {
@@ -235,6 +236,7 @@ ipcMain.on('getData', async (event, data) => {
   if (data.startsWith('ngPlayer_')) res.data = await fetchPlayer(JSON.parse(data.replace('ngPlayer_', '')), { withStats: true }, options.apiKey)
   if (data == 'blacklist.txt') res.data = blacklists;
   if (data == 'mcColors.json') res.data = mcColors;
+  if (data == 'package.json') res.data = pjson;
 
   event.returnValue = res;
 })

@@ -45,6 +45,7 @@ const winTitles = [document.getElementById('win_title'), document.getElementById
 
 let mcColors;
 let hasRan = false;
+let pjson;
 let options;
 let versionKeys;
 let listening;
@@ -96,6 +97,9 @@ options = window.electronAPI.sendSync('getData', 'options.json').data;
 versionKeys = window.electronAPI.sendSync('getData', 'versionKeys.json').data;
 blacklists = window.electronAPI.sendSync('getData', 'blacklist.txt').data;
 mcColors = window.electronAPI.sendSync('getData', 'mcColors.json').data;
+pjson = window.electronAPI.sendSync('getData', 'package.json').data;
+
+winTitles[2].innerHTML += pjson.version;
 
 if (!hasRan) {
     hasRan = true;

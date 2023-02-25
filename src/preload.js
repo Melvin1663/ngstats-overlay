@@ -10,7 +10,7 @@ contextBridge.exposeInMainWorld('electronAPI', {
     onTop: (c) => ipcRenderer.send('onTop', c),
     ignoreMouse: (c) => ipcRenderer.send('ignoreMouse', c),
     onLog: (c) => ipcRenderer.on('onLog', c),
-    sendLog: (...c) => ipcRenderer.send('sendLog', c),
+    sendLog: (...c) => ipcRenderer.send('sendLog', ...c),
     getData: (c) => ipcRenderer.send('getData', c),
     onData: (c) => ipcRenderer.on('onData', c),
     relay: (c) => ipcRenderer.send('relay', c),
