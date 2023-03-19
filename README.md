@@ -26,7 +26,7 @@ CheckNetIsolation LoopbackExempt -a -n="Microsoft.MinecraftUWP_8wekyb3d8bbwe"
 4. When it disappears, The NetherGames Stats Overlay window should appear on your screen. You just installed it!
 
 ## How to update
-To update to the latest version, uninstall your current version and install the latest one.
+Simply run the setup file for the new version, it is not required to uninstall your current version of the app, it will still work the same.
 
 ## FAQ
 
