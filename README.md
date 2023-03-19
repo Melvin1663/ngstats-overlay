@@ -31,18 +31,13 @@ To update to the latest version, uninstall your current version and install the 
 ## FAQ
 
 **Q:** App shows "Proxy server closed unexpectedly."  
-**A:** Check the logs which can be found at `%appdata%/NetherGames Stats Overlay/logs`.   If your error is [common](#common-errors), you can try and fix it, if not, ask for help in the [discord](https://discord.gg/6t3cYEJN2X).  
+**A:** Check if you have NodeJS installed by running node -v in powershell. If it returns a version number, it is installed, if it says it's not a command then it's not installed, please install it from https://nodejs.org/ If it is already installed and still saying "Proxy server closed unexpectedly." please post the logs (`%appdata%/NetherGames Stats Overlay/logs` latest log file) in #help in the discord server.
   
 **Q:** Does this work for mobile?  
 **A:** No, and we do not have any plans on having support for mobile.  
   
 **Q:** What is threat/smurf?  
 **A:** It is a percent value which tells you how likely the player is an alternate account by an experienced player.
-
-## Common Errors
-
-**E:** Command "node" is not recognized  
-**F:** You haven't installed Node.js. Download it from [here](https://nodejs.org)
 
 ## Setup
 
@@ -69,7 +64,7 @@ This application utilizes the module [`bedrock-protocol`](https://www.npmjs.com/
 ## Having Problems
 
 This application is far from perfect so you may encounter some bugs here and there...
-If you are having problems while using the app, feel free to join our [discord server](https://discord.gg/6t3cYEJN2X) and report the problem there.
+If you are having problems while using the app, feel free to join our [discord server](https://discord.gg/PadKthDx8g) and report the problem there.
 
 ## Contributors
 
