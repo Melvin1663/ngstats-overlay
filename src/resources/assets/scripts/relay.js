@@ -29,8 +29,6 @@ const versionOrder = [
     "1.19.70", // 19
 ];
 
-console.log(version)
-
 const relay = new Relay({
     version: version,
     host: options.relayIp,
