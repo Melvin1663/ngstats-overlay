@@ -26,8 +26,10 @@ const versionOrder = [
     "1.19.50", // 16
     "1.19.60", // 17
     "1.19.62", // 18
-    "1.19.70"
+    "1.19.70", // 19
 ];
+
+console.log(version)
 
 const relay = new Relay({
     version: version,
