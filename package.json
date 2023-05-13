@@ -1,7 +1,7 @@
 {
   "name": "ngstats-overlay",
   "productName": "NetherGames Stats Overlay",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "NetherGames Stats Overlay",
   "main": "src/index.js",
   "scripts": {

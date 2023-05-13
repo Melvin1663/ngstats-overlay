@@ -164,7 +164,7 @@ ipcMain.on('relay', (event, msg) => {
       return dialog.showMessageBox({
         title: 'Minecraft version not supported :(',
         type: 'error',
-        message: 'NG Stats overlay currently supports the versions: 1.16.201 - 1.19.62'
+        message: 'NG Stats overlay currently only supports the versions: 1.16.201 - 1.19.73'
       }).then(() => {
         app.quit();
         mainWindow?.destroy();
