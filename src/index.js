@@ -158,13 +158,18 @@ ipcMain.on('relay', (event, msg) => {
       });
     }
 
-    if (!versionKeys[simplyVer(ver)]?.length) {
+    let supported = false;
+
+    if (versionKeys[simplyVer(ver)]?.length) supported = true;
+    if (parseInt(ver.split('.')[1]) > 16) supported = true;
+
+    if (!supported) {
       if (options.winOnTop) mainWindow.setAlwaysOnTop(false, 'screen-saver');
 
       return dialog.showMessageBox({
         title: 'Minecraft version not supported :(',
         type: 'error',
-        message: 'NG Stats overlay currently only supports the versions: 1.16.201 - 1.19.73'
+        message: 'NG Stats overlay currently only supports the versions: 1.16.201+'
       }).then(() => {
         app.quit();
         mainWindow?.destroy();
@@ -174,7 +179,9 @@ ipcMain.on('relay', (event, msg) => {
     console.info('Checking port...');
     console.info(killPort(options.relayPort).trim());
 
-    child = spawn(`node ./resources/assets/scripts/relay.js "${optsPath}" "${versionKeys[simplyVer(ver)]}" "${authPath}"`, { cwd: __dirname, shell: true });
+    let vk = versionKeys[simplyVer(ver)] || `1.${ver.split('.')[1]}.${ver.split('.')[2][0]}0`;
+
+    child = spawn(`node ./resources/assets/scripts/relay.js "${optsPath}" "${vk}" "${authPath}"`, { cwd: __dirname, shell: true });
 
     console.info('Child process spawned');
 

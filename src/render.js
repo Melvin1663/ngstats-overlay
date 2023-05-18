@@ -381,6 +381,8 @@ const start_listening = (fragments) => {
         if (versionKeys[i] == fragments[4].replace('\n', '')) suppVers.push(i);
     }
 
+    if (!suppVers.length) suppVers.push(fragments[4] + '+');
+
     logMsg.style.setProperty('display', 'block');
     logMsg.style.setProperty('text-align', 'justify');
     logMsg2.style.setProperty('display', 'none');

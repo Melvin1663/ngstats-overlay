@@ -27,6 +27,7 @@ const versionOrder = [
     "1.19.60", // 17
     "1.19.62", // 18
     "1.19.70", // 19
+    "1.19.80", // 20
 ];
 
 const relay = new Relay({
@@ -100,7 +101,7 @@ relay.on("connect", player => {
                 let runTimeIdKey = 'runtime_id';
                 let uniqueIdKey = 'unique_id';
 
-                if (versionOrder.indexOf(version) < 11) {
+                if ((versionOrder.indexOf(version) == -1 ? 12 : versionOrder.indexOf(version)) < 11) { // if older version
                     runTimeIdKey = 'runtime_entity_id';
                     uniqueIdKey = 'entity_id_self';
                 };
