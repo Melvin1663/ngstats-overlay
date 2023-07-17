@@ -191,14 +191,18 @@ window.electronAPI.onData(async (event, data) => {
         if (data.title == 'player_list' && !inLobby) {
             let comparison = window.electronAPI.sendSync('compareArray', { before: playerList ?? [], after: data.data ?? [] });
 
+            console.log(comparison)
+
             if (comparison.changed && !o_playerList.length) {
                 playerList = data.data;
 
                 let playersRes;
 
-                for (delPlayer of comparison.deleted) delete playerListData[delPlayer[1]];
+                for (delPlayer of comparison.deleted) {
+                    for (xuid in playerListData) if (playerListData[xuid].name == delPlayer) delete playerListData[xuid];
+                }
 
-                if (comparison.added.length) playersRes = window.electronAPI.sendSync('getData', `ngPlayer_${JSON.stringify(comparison.added.map(e => e[0]))}`);
+                if (comparison.added.length) playersRes = window.electronAPI.sendSync('getData', `ngPlayer_${JSON.stringify(comparison.added.map(e => e))}`);
 
                 if (playersRes && playersRes.data) {
                     if (playersRes.data.length) {
@@ -209,6 +213,8 @@ window.electronAPI.onData(async (event, data) => {
                 }
 
                 let keys = Object.keys(playerListData).reverse();
+
+                console.log(keys)
 
                 statsTable.innerHTML = '';
 
@@ -257,31 +263,20 @@ window.electronAPI.onData(async (event, data) => {
                             }
                         }
 
-                        let ignSections = data.data.find(e => e[0] == pdata.name)
-                        if (ignSections) ignSections = ignSections[1]?.replaceAll(/┬º./gm, '');
+                        let ignSpan = document.createElement('span');
 
-                        let _ignSections = ignSections.split(' ');
+                        ignSpan.innerHTML = `\u2002${pdata.name}`
+                        pname.appendChild(ignSpan);
 
-                        if (_ignSections[0].startsWith('§l§')) _ignSections.shift();
+                        if (pdata.ranks.length) {
+                            let imgRank = new Image(30, 30)
 
-                        ignSections = _ignSections.join(' ').split('§');
-
-                        if (ignSections) {
-                            if (ignSections[0] != "") ignSections[0] = `f${ignSections[0]}`;
-
-                            if (!ignSections.length) {
-                                ignSections.push(`f${levelString}`);
-                            }
-
-                            for (j = 0; j < ignSections.length; j++) {
-                                let realTxt = ignSections[j].slice(1);
-                                let colorTxt = ignSections[j].slice(0, 1);
-                                let ignSpan = document.createElement('span');
-                                ignSpan.innerHTML = j == 0 ? `\u2002${realTxt}` : realTxt;
-                                ignSpan.style.color = mcColors.colorHex[mcColors.formats[colorTxt]];
-
-                                pname.appendChild(ignSpan);
-                            }
+                            if (pdata.ranks.includes('Titan')) imgRank.src = 'https://i.imgur.com/zNfBZff.png'
+                            else if (pdata.ranks.includes('Legend')) imgRank.src = 'https://i.imgur.com/PXTyJF9.png'
+                            else if (pdata.ranks.includes('Emerald')) imgRank.src = 'https://i.imgur.com/Q3rmEqI.png'
+                            else if (pdata.ranks.includes('Ultra')) imgRank.src = 'https://i.imgur.com/SpDvufR.png'
+                            
+                            if (imgRank.src) pname.appendChild(imgRank);
                         }
 
                         pwins.innerHTML = pdata.wins;
